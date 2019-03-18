@@ -1,0 +1,19 @@
+.product-image-photo{
+    position: relative;
+}
+.badge_label{
+    position: absolute;
+    z-index: 999;
+    margin: 5px;
+    text-align: center;
+
+}
+.free_shipping{
+    background-color: #008000;
+}
+.best_seller{
+    background-color: #4169E1;
+}
+.sale{
+    background-color: #800000;
+}
