@@ -1,0 +1,21 @@
+<?php
+    /** @var \Magento\Framework\View\Element\Template $block */
+
+/** @var \Badge\BadgeLabel\ViewModel\CmsPageList $viewModel */
+    $viewModel = $block->getData('viewModel');
+    $_product = $viewModel->getProduct();
+?>
+
+<!--added code-->
+    <?php $badges = explode(',', $_product->getBadgeLabel());
+    if($badges): ?>
+        <div class="badge_label">
+            <?php foreach ($badges as $badge):; ?>
+               <span class="<?php echo $badge ?>">
+               <?php echo $_product->getResource()->getAttribute('badge_label')->getSource()->getOptionText($badge) ?>
+               </span></br>
+            <?php endforeach ?>
+        </div>
+
+    <?php endif; ?>
+<!--end of code added-->

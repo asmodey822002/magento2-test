@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::THEME,
-    'frontend/Proficiency/check',
+    'frontend/Hedgehog/themehog',
     __DIR__
 );

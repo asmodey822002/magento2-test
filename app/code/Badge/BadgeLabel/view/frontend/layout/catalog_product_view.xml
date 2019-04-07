@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Badge_BadgeLabel::css/source/custom.css" />
+    </head>
+    <body>
+        <referenceContainer name="product.info.media">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="badge.mymodule"
+                   before="product.info.media.image"
+                   template="Badge_BadgeLabel::script.phtml" >
+                    <arguments>
+                        <argument name="viewModel" xsi:type="object">Badge\BadgeLabel\ViewModel\CmsPageList</argument>
+                    </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
